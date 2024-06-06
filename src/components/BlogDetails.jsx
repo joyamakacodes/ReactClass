@@ -13,7 +13,7 @@ const BlogDetails = () => {
     if(render){
       setBlogs(render)
     }
-  },[id, BlogData])
+  },[id])
   return (
     <div>
       <img src={blogs.Image} alt={blogs.Title} />

@@ -2,8 +2,8 @@ import React from 'react'
 import Button from './Button';
 import About from './About';
 import Recounting from './Recounting';
-
-
+import Material from './components/Material';
+import TodoList from './components/Todo'
 const Home = () => {
   return (
     <div>
@@ -14,7 +14,9 @@ const Home = () => {
     <Button>Submit</Button>
     {/* <Form/> */}
     <About/>
-    <Recounting/>
+    {/* <Recounting/> */}
+    <TodoList/>
+    {/* <Material/> */}
     
     </div>
   )

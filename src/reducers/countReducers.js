@@ -1,10 +1,9 @@
-import { createStore } from "redux";
-
+import { createStore } from "redux"
 const initialState= {
     count: 0
 }
 
-const CounterState= (state=initialState, action)=>{
+ const CounterState= (state=initialState, action)=>{
     switch (action.type) {
         case 'INCREMENT':
             return{
@@ -16,11 +15,16 @@ const CounterState= (state=initialState, action)=>{
                     ...state,
                     count: state.count - 1
                 }
+            case 'RESET': 
+            return{
+                ...state,
+                count: 0
+            }
         default:
             return state
     }
 
 }
-const store= createStore(CounterState)
+const store = createStore(CounterState)
 
-export default store
+export default store;

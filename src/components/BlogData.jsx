@@ -6,7 +6,6 @@
  import image6 from './../assets/nupatinit5.webp';
  import image7 from './../assets/nupatinit6.webp';
  import image8 from './../assets/nupatinit7.webp';
- import image9 from './../assets/nupatinit8.jpg';
 
 const BlogData = [
     {
